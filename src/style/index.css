@@ -1,0 +1,117 @@
+@import './reset.css';
+
+:root {
+    --app-border-radius: 5px;
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange1: #ff833c;
+    --app-orange2: #f18115;
+    --app-lighter-orange: #ffb300;
+    --app-dark-blue: #1a2649;
+    --app-lighter-blue: #506290;
+    --app-medium-blue: #283862;
+    --app-grey: #f3f4f5;
+    --app-red: #ff3c57;
+    --app-red-hover: #ff2846;
+    --app-body-box-shadow: 0 0.275rem 1.25rem rgb(11 15 25 / 5%), 0 0.25rem 0.5625rem rgb(11 15 25 / 3%);
+  }
+  
+  body {
+    /* background-color: var(--app-dark-bg); */
+    background-color: #020202;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+
+  }
+  
+  
+  .container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+  }
+
+  main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .container h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    height: 40px;
+  }
+  
+  .stars {
+    gap: 5px;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .dialog-open {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 45px;
+    width: 150px;
+    padding: 0 10px;
+    border-radius: 50px;
+    background-color: #09f;
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dialog-open:hover {
+    background-color: rgb(0, 140, 233);
+    text-decoration: underline;
+  }
+  
+  .dialog {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: rgb(133, 133, 133) 1px solid;
+    margin-inline: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align:  center;
+    box-shadow: 5px 5px 13px 5px rgba(140,140,140,0.16) ;
+  }
+  .dialog h3{
+    /* font-size: 20px; */
+    margin-top: 10px;
+  }
+  
+  .dialog p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .close-btn {
+    margin-top: 50px;
+    height: 35px;
+    width: 100px;
+    padding: 0 10px;
+    border-radius: 50px;
+    background-color: #09f;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 600;
+    transition: all 0.80s ease-in-out;
+  
+  }
+  .close-btn:hover{
+    background-color: var(--app-red);
+  }
